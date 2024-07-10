@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campaign Generator Page</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navigation-bar">
+            <ul>
+                <li><img src="assets/logo-omantel.png" alt="" class="logo-oman"></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Repository .html">Repository</a></li>
+                <li><a href="Campsign-gene.html"><b>Campaign Generator</b></a></li>
+                <li><a href="Cam-history.html">Campaign History</a></li>
+                <li><a href="Settings.html">Settings</a></li>
+                <li><a href="help.html">Help</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="step-by-step-guide">
+            <h2>Step-by-Step Guide</h2>
+            <p>Instructions on creating a campaign using past data...</p>
+        </section>
+        <section class="data-input-section">
+            <h2>Data Input Section</h2>
+            <!-- Fields to input or select content types, campaign goals -->
+            <form>
+                <label for="content-type">Content Type:</label>
+                <select id="content-type">
+                    <option>Text</option>
+                    <option>Images</option>
+                    <option>Videos</option>
+                </select><br><br>
+                <label for="campaign-goals">Campaign Goals:</label><br>
+                <textarea id="campaign-goals" rows="4" cols="50"></textarea><br><br>
+            </form>
+        </section>
+        <section class="ai-suggestions-panel">
+            <h2>AI Suggestions Panel</h2>
+            <!-- Displays AI-generated content suggestions like headlines, text, images -->
+            <div class="suggestions">
+                <h3>Headline:</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h3>Text:</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h3>Images:</h3>
+                <img src="placeholder.jpg" alt="Placeholder Image">
+            </div>
+        </section>
+        <section class="preview-edit-area">
+            <h2>Preview & Edit Area</h2>
+            <!-- Where generated content can be previewed and edited (change size, color) -->
+            <div class="preview">
+                <h3>Preview:</h3>
+                <div class="preview-content">
+                    <h4>Generated Content Preview</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="edit">
+                <h3>Edit:</h3>
+                <form>
+                    <label for="text-color">Text Color:</label>
+                    <input type="color" id="text-color" name="text-color"><br><br>
+                    <label for="text-size">Text Size:</label>
+                    <input type="range" id="text-size" name="text-size" min="12" max="24"><br><br>
+                </form>
+            </div>
+        </section>
+        <section class="export-options">
+            <h2>Export Options</h2>
+            <!-- Buttons to export or share the campaign with PR firms and other platforms -->
+            <button>Export Campaign</button>
+            <button>Share Campaign</button>
+        </section>
+    </main>
+</body>
+</html>
